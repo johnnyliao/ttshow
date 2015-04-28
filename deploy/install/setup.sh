@@ -73,7 +73,7 @@ update-rc.d celeryd defaults
 cp deploy/envvars /etc/apache2/
 cp deploy/rc.local /etc/
 
-cp deploy/000-ieach /etc/apache2/sites-enabled/
+cp deploy/000-webProject /etc/apache2/sites-enabled/
 rm -f /etc/apache2/sites-enabled/000-default
 
 reboot
