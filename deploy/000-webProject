@@ -1,0 +1,5 @@
+<VirtualHost *:80>
+    Alias /static /var/www/django/webproject/static
+    Alias /media /var/www/django/webproject/media
+    WSGIScriptAlias / /var/www/django/webproject/wsgi.py
+</VirtualHost>
