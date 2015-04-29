@@ -4,10 +4,10 @@
 # MEZZANINE SETTINGS #
 ######################
 
-GRAPPELLI_ADMIN_HEADLINE = "webProject"
-GRAPPELLI_ADMIN_TITLE = "webProject"
+GRAPPELLI_ADMIN_HEADLINE = "webproject"
+GRAPPELLI_ADMIN_TITLE = "webproject"
 
-SITE_TITLE = "webProject"
+SITE_TITLE = "webproject"
 SITE_TAGLINE = ""
 
 # The following settings are already defined with default values in

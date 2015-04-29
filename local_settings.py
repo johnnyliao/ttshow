@@ -4,7 +4,7 @@ DEBUG = TEMPLATE_DEBUG = True
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "webProject",
+        "NAME": "webproject",
         "USER": "root",
         "PASSWORD": "",
         "HOST": "127.0.0.1",
