@@ -65,11 +65,6 @@ python manage.py collectstatic --noinput
 chmod 777 -R *
 python manage.py createdb
 
-cp deploy/celery/default/celeryd /etc/default/
-cp deploy/celery/init.d/celeryd /etc/init.d/
-chmod +x /etc/init.d/celeryd
-update-rc.d celeryd defaults
-
 cp deploy/envvars /etc/apache2/
 cp deploy/rc.local /etc/
 

@@ -12,6 +12,19 @@ DATABASES = {
     }
 }
 
+"""
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "webproject",
+        "USER": "root",
+        "PASSWORD": "liao12345",
+        "HOST": "127.0.0.1",
+        "PORT": "3306",
+    }
+}
+"""
+
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
