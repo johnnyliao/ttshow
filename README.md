@@ -1,7 +1,7 @@
 # webproject
 johnny project
 
-django 1.6
+django 1.5.5
 python 2.3
 this project provide a clean django 1.6 backend site with account app
 first git clone project to your path
