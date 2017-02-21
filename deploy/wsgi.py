@@ -1,7 +1,7 @@
 import sys
 import os
 
-PROJECT_ROOT = "/var/www/django/webproject"
+PROJECT_ROOT = "/var/www/django/ttshow"
 
 # for project's apps
 sys.path.append(PROJECT_ROOT)

@@ -4,7 +4,7 @@ DEBUG = TEMPLATE_DEBUG = True
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "webproject",
+        "NAME": "ttshow",
         "USER": "root",
         "PASSWORD": "",
         "HOST": "127.0.0.1",
@@ -16,7 +16,7 @@ DATABASES = {
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "webproject",
+        "NAME": "ttshow",
         "USER": "root",
         "PASSWORD": "liao12345",
         "HOST": "127.0.0.1",

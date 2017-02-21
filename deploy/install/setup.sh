@@ -1,6 +1,6 @@
 
 datebase_root_password="liao12345"
-datebase_name="webproject"
+datebase_name="ttshow"
 
 if [ "$datebase_root_password" = "" ]; then
     echo "please set up the datebase_root_password"
@@ -56,9 +56,9 @@ adduser --system --no-create-home --disabled-login --disabled-password --group c
 mkdir /var/www/django
 cd /var/www/django/
 
-git clone https://github.com/johnnyliao/webproject.git
+git clone https://github.com/johnnyliao/ttshow.git
 
-cd webproject/
+cd ttshow/
 chmod 777 -R *
 pip install -r requirements/project.txt
 python manage.py collectstatic --noinput
@@ -68,7 +68,7 @@ python manage.py createdb
 cp deploy/envvars /etc/apache2/
 cp deploy/rc.local /etc/
 
-cp deploy/000-webproject /etc/apache2/sites-enabled/
+cp deploy/000-ttshow /etc/apache2/sites-enabled/
 rm -f /etc/apache2/sites-enabled/000-default
 
 reboot

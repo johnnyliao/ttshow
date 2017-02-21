@@ -4,10 +4,10 @@
 # MEZZANINE SETTINGS #
 ######################
 
-GRAPPELLI_ADMIN_HEADLINE = "webproject"
-GRAPPELLI_ADMIN_TITLE = "webproject"
+GRAPPELLI_ADMIN_HEADLINE = "ttshow"
+GRAPPELLI_ADMIN_TITLE = "ttshow"
 
-SITE_TITLE = "webproject"
+SITE_TITLE = "ttshow"
 SITE_TAGLINE = ""
 
 # The following settings are already defined with default values in
@@ -19,12 +19,13 @@ SITE_TAGLINE = ""
 
 # Controls the ordering and grouping of the admin menu.
 #
-# ADMIN_MENU_ORDER = (
-#     ("Content", ("pages.Page", "blog.BlogPost",
-#        "generic.ThreadedComment", ("Media Library", "fb_browse"),)),
-#     ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
-#     ("Users", ("auth.User", "auth.Group",)),
-# )
+ADMIN_MENU_ORDER = (
+     ("Content", ("pages.Page", "blog.BlogPost",
+        "generic.ThreadedComment", ("Media Library", "fb_browse"),)),
+     ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
+     ("Users", ("account.User", "account.Group",)),
+     ("Inner", ("inner.Inner",)),
+)
 
 # A three item sequence, each containing a sequence of template tags
 # used to render the admin dashboard.
@@ -218,10 +219,9 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
 INSTALLED_APPS = (
     "account",
-
     "rest_framework",
     "rest_framework_swagger",
-
+    "inner",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -235,6 +235,7 @@ INSTALLED_APPS = (
     "mezzanine.core",
     "mezzanine.pages",
     "mezzanine.generic",
+    'salmonella',
     # "mezzanine.blog",
     # "mezzanine.forms",
     # "mezzanine.galleries",
